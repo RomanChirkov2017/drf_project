@@ -4,7 +4,7 @@ from rest_framework import routers
 from materials.apps import MaterialsConfig
 from materials.views import (CourseViewSet, LessonCreateView, LessonDeleteView,
                              LessonDetailView, LessonListView,
-                             LessonUpdateView)
+                             LessonUpdateView, PaymentsViewSet)
 
 app_name = MaterialsConfig.name
 
@@ -18,5 +18,6 @@ urlpatterns = [
 
 router = routers.SimpleRouter()
 router.register("course", CourseViewSet)
+router.register("payments", PaymentsViewSet)
 
 urlpatterns += router.urls

@@ -1,0 +1,50 @@
+[
+  {
+    "model": "users.payments",
+    "pk": 1,
+    "fields": {
+      "user": null,
+      "payment_date": "2024-05-21T14:57:10.571Z",
+      "paid_course": 1,
+      "paid_lesson": null,
+      "payment_amount": 35000,
+      "payment_method": "Наличными"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 2,
+    "fields": {
+      "user": null,
+      "payment_date": "2024-05-21T16:27:38.472Z",
+      "paid_course": 2,
+      "paid_lesson": null,
+      "payment_amount": 20000,
+      "payment_method": "Перевод"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 3,
+    "fields": {
+      "user": null,
+      "payment_date": "2024-05-21T16:28:49.621Z",
+      "paid_course": null,
+      "paid_lesson": 3,
+      "payment_amount": 2000,
+      "payment_method": "Перевод"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 4,
+    "fields": {
+      "user": null,
+      "payment_date": "2024-05-21T16:30:09.829Z",
+      "paid_course": null,
+      "paid_lesson": 2,
+      "payment_amount": 1000,
+      "payment_method": "Наличными"
+    }
+  }
+]

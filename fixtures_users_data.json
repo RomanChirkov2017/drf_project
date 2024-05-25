@@ -1,5 +1,65 @@
 [
   {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "mmclegnum157",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-05-24T03:21:45.435Z",
+      "email": "admin@sky.pro",
+      "first_name": null,
+      "last_name": null,
+      "phone": null,
+      "avatar": "",
+      "city": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "mmclegnum157",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-05-24T03:23:13.693Z",
+      "email": "Roman@sky.pro",
+      "first_name": null,
+      "last_name": null,
+      "phone": null,
+      "avatar": "",
+      "city": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "mmclegnum157",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-05-24T03:29:17.126Z",
+      "email": "Roma@sky.pro",
+      "first_name": null,
+      "last_name": null,
+      "phone": null,
+      "avatar": "",
+      "city": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
     "model": "users.payments",
     "pk": 1,
     "fields": {
@@ -29,7 +89,7 @@
     "fields": {
       "user": null,
       "payment_date": "2024-05-21T16:28:49.621Z",
-      "paid_course": null,
+      "paid_course": 3,
       "paid_lesson": 3,
       "payment_amount": 2000,
       "payment_method": "Перевод"
@@ -41,9 +101,45 @@
     "fields": {
       "user": null,
       "payment_date": "2024-05-21T16:30:09.829Z",
-      "paid_course": null,
+      "paid_course": 2,
       "paid_lesson": 2,
       "payment_amount": 1000,
+      "payment_method": "Наличными"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 5,
+    "fields": {
+      "user": null,
+      "payment_date": "2024-05-24T02:31:04.209Z",
+      "paid_course": 3,
+      "paid_lesson": null,
+      "payment_amount": 40000,
+      "payment_method": "Наличными"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 6,
+    "fields": {
+      "user": null,
+      "payment_date": "2024-05-24T04:08:40.532Z",
+      "paid_course": 3,
+      "paid_lesson": 3,
+      "payment_amount": 4000,
+      "payment_method": "Наличными"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 7,
+    "fields": {
+      "user": null,
+      "payment_date": "2024-05-25T00:36:46.057Z",
+      "paid_course": 1,
+      "paid_lesson": 4,
+      "payment_amount": 4000,
       "payment_method": "Наличными"
     }
   }

@@ -1,0 +1,76 @@
+[
+  {
+    "model": "materials.course",
+    "pk": 1,
+    "fields": {
+      "title": "Курс Python",
+      "image": "",
+      "description": null,
+      "owner": null
+    }
+  },
+  {
+    "model": "materials.course",
+    "pk": 2,
+    "fields": {
+      "title": "Курс JavaScript",
+      "image": "",
+      "description": null,
+      "owner": null
+    }
+  },
+  {
+    "model": "materials.course",
+    "pk": 3,
+    "fields": {
+      "title": "Курс PHP",
+      "image": "",
+      "description": "Самый лучший курс по PHP",
+      "owner": null
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 1,
+    "fields": {
+      "title": "Урок первый. Введение в програмимрование.",
+      "description": "Самый важный урок",
+      "image": "",
+      "video_link": null,
+      "course": 1
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 2,
+    "fields": {
+      "title": "Урок первый. Основы frontend-разработки.",
+      "description": "Вводный урок",
+      "image": "",
+      "video_link": null,
+      "course": 2
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 3,
+    "fields": {
+      "title": "Введение в программирование.",
+      "description": "Начало",
+      "image": "",
+      "video_link": null,
+      "course": 3
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 4,
+    "fields": {
+      "title": "Урок второй. Алгоритмы.",
+      "description": "Основа программирования",
+      "image": "",
+      "video_link": null,
+      "course": 1
+    }
+  }
+]

@@ -5,7 +5,7 @@
     "fields": {
       "title": "Курс Python",
       "image": "",
-      "description": null,
+      "description": "Самый лучший язык разработки",
       "owner": null
     }
   },
@@ -30,6 +30,26 @@
     }
   },
   {
+    "model": "materials.course",
+    "pk": 4,
+    "fields": {
+      "title": "Курс Motion Design",
+      "image": "",
+      "description": "ХЗ, что это такое",
+      "owner": 7
+    }
+  },
+  {
+    "model": "materials.course",
+    "pk": 5,
+    "fields": {
+      "title": "Урок второй.",
+      "image": "",
+      "description": "...",
+      "owner": 7
+    }
+  },
+  {
     "model": "materials.lesson",
     "pk": 1,
     "fields": {
@@ -37,7 +57,8 @@
       "description": "Самый важный урок",
       "image": "",
       "video_link": null,
-      "course": 1
+      "course": 1,
+      "owner": null
     }
   },
   {
@@ -48,7 +69,8 @@
       "description": "Вводный урок",
       "image": "",
       "video_link": null,
-      "course": 2
+      "course": 2,
+      "owner": null
     }
   },
   {
@@ -59,7 +81,8 @@
       "description": "Начало",
       "image": "",
       "video_link": null,
-      "course": 3
+      "course": 3,
+      "owner": null
     }
   },
   {
@@ -70,7 +93,32 @@
       "description": "Основа программирования",
       "image": "",
       "video_link": null,
-      "course": 1
+      "course": 1,
+      "owner": null
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 5,
+    "fields": {
+      "title": "Основы дизайна.",
+      "description": "Начало",
+      "image": "",
+      "video_link": null,
+      "course": 4,
+      "owner": null
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 6,
+    "fields": {
+      "title": "Урок второй.",
+      "description": "...",
+      "image": "",
+      "video_link": null,
+      "course": 4,
+      "owner": 7
     }
   }
 ]

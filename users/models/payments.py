@@ -7,6 +7,11 @@ NULLABLE = {"blank": True, "null": True}
 
 
 class Payments(models.Model):
+    PAYMENTS_CHOICES = [
+        ("cash", "Наличные"),
+        ("transfer", "Перевод"),
+    ]
+
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, **NULLABLE, verbose_name="Пользователь"
     )
@@ -22,8 +27,14 @@ class Payments(models.Model):
     payment_amount = models.PositiveIntegerField(verbose_name="Сумма оплаты")
     payment_method = models.CharField(
         **NULLABLE,
+        choices=PAYMENTS_CHOICES,
         verbose_name="Способ оплаты",
-        help_text="Оплата наличными или перевод на счет?",
+    )
+    session_id = models.CharField(
+        max_length=255, **NULLABLE, verbose_name="Id сессии"
+    )
+    link = models.URLField(
+        max_length=450, **NULLABLE, verbose_name="Ссылка на оплату"
     )
 
     def __str__(self):
@@ -32,3 +43,4 @@ class Payments(models.Model):
     class Meta:
         verbose_name = "Платеж"
         verbose_name_plural = "Платежи"
+        ordering = ("-payment_date",)

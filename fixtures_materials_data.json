@@ -15,7 +15,7 @@
     "fields": {
       "title": "Курс JavaScript",
       "image": "",
-      "description": null,
+      "description": "Frontend!",
       "owner": null
     }
   },
@@ -47,6 +47,16 @@
       "image": "",
       "description": "...",
       "owner": 7
+    }
+  },
+  {
+    "model": "materials.course",
+    "pk": 6,
+    "fields": {
+      "title": "Курс JavaScript",
+      "image": "",
+      "description": "Frontend!!!",
+      "owner": 8
     }
   },
   {
@@ -116,9 +126,53 @@
       "title": "Урок второй.",
       "description": "...",
       "image": "",
-      "video_link": null,
+      "video_link": "https://www.youtube.com/",
       "course": 4,
       "owner": 7
+    }
+  },
+  {
+    "model": "materials.lesson",
+    "pk": 7,
+    "fields": {
+      "title": "Урок второй. Основы.",
+      "description": "Самый важный урок",
+      "image": "",
+      "video_link": null,
+      "course": 2,
+      "owner": 8
+    }
+  },
+  {
+    "model": "materials.subscription",
+    "pk": 2,
+    "fields": {
+      "user": 7,
+      "course": 1
+    }
+  },
+  {
+    "model": "materials.subscription",
+    "pk": 3,
+    "fields": {
+      "user": 8,
+      "course": 4
+    }
+  },
+  {
+    "model": "materials.subscription",
+    "pk": 4,
+    "fields": {
+      "user": 8,
+      "course": 2
+    }
+  },
+  {
+    "model": "materials.subscription",
+    "pk": 5,
+    "fields": {
+      "user": 8,
+      "course": 1
     }
   }
 ]

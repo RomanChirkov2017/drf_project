@@ -19,6 +19,10 @@ class Course(models.Model):
     description = models.TextField(
         **NULLABLE, verbose_name="Описание", help_text="Введите описание"
     )
+    last_update = models.DateTimeField(
+        **NULLABLE,
+        verbose_name="Последнее обновление"
+    )
     owner = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
